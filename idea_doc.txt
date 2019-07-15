@@ -1,0 +1,19 @@
+# === getValue - funkcija ====
+1 - Izvuci i Kategorisati epanet funkcije(ENimefunkcije) i parametre(EN_IMEPARAMETRA)
+  - Napraviti preglednu tabelu, za brz pristup.
+
+  ---------------------------------------------------------------------                           
+                             OBJECTS
+  ---------------------------------------------------------------------                           
+  FUNCTION ||  NODE                            ||    LINK
+  ---------------------------------------------------------------------
+           ||  JUNCTIONS | TANKS | RESERVOIRS  ||    PIPE  PUMP  VALVE
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+           ||            |       |             ||                     
+

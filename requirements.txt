@@ -1,0 +1,4 @@
+epanettools
+numpy
+pandas
+easygui
