@@ -67,9 +67,9 @@ import utilfns as uf
 import pandas as pd
 
 
-# ----------------------------- #
-# ::: C V O R O V I (PIPES) ::: #
-# ----------------------------- #
+# --------------------------------- #
+# ::: C V O R O V I (JUNCTIONS) ::: #
+# --------------------------------- #
 
 def junctions():  # ! Sredjeno - TESTIRATI
     """
@@ -423,8 +423,7 @@ def getPump():   # ! Sredjeno - TESTIRATI
 
     """
     number_of_objects = enapi.getCount("link")
-    pump_indexes = [i for i in range(
-        1, number_of_objects + 1) if enapi.getType('link', i) == 'Pump']
+    pump_indexes = [i for i in range(1, number_of_objects + 1) if enapi.getType('link', i) == 'Pump']
     pump_ids = [enapi.getID('link', i) for i in pump_indexes]
 
     return dict(list(zip(pump_ids, pump_indexes)))
