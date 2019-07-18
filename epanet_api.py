@@ -326,7 +326,7 @@ def setValue(network_object, object_property, object_index, new_value):   # ! Sr
         epa.EN_TANKLEVEL
         itd. pogledaj EPANET_toolkit_help.pdf - str.56 i 57
 
-        *node - properties*
+        *link - properties*
         epa.EN_INITSETTING ->  Pipe roughness, Initial pump speed, Initial valve setting
         epa.EN_INITSTATUS  ->  1 - Open, 0 - Closed
         epa.EN_DIAMETER
