@@ -165,30 +165,32 @@ def getType(network_object, object_index):  # ! Sredjeno - TESTIRATI -> RADI
     """
     # node - type index
     node_types = {
-        0: 'Junction node',
-        1: 'Reservoir node',
-        2: 'Tank node'
+        '0': 'Junction node',
+        '1': 'Reservoir node',
+        '2': 'Tank node'
     }
 
     # link - type index
     link_types = {
-        0: 'Pipe with Check Valve',
-        1: 'Pipe',
-        2: 'Pump',
-        3: 'Pressure Reducing Valve',
-        4: 'Pressure Sustaining Valve',
-        5: 'Pressure Breaker Valve',
-        6: 'Flow Control Valve',
-        7: 'Throttle Control Valve',
-        8: 'General Purpose Valve'
+        '0': 'Pipe with Check Valve',
+        '1': 'Pipe',
+        '2': 'Pump',
+        '3': 'Pressure Reducing Valve',
+        '4': 'Pressure Sustaining Valve',
+        '5': 'Pressure Breaker Valve',
+        '6': 'Flow Control Valve',
+        '7': 'Throttle Control Valve',
+        '8': 'General Purpose Valve'
     }
 
-    object_type = {
-        'node': node_types[epa.ENgetnodetype(object_index)[1]],
-        'link': link_types[epa.ENgetlinktype(object_index)[1]]
-    }
-
-    return object_type[network_object]
+    if network_object == 'link':
+        result = link_types[f"{epa.ENgetlinktype(object_index)[1]}"]
+        return result
+    elif network_object == 'node':
+        result = node_types[f"{epa.ENgetnodetype(object_index)[1]}"]
+        return result
+    else:
+        print("Object doesn't exist!")
 
 
 def getValue(network_object, object_property, object_index=''):   # ! Sredjeno - TESTIRATI -> RADI
@@ -220,7 +222,6 @@ def getValue(network_object, object_property, object_index=''):   # ! Sredjeno -
         'link': epa.EN_LINKCOUNT,
         'node': epa.EN_NODECOUNT
     }
-
 
     # Provera da li smo ubacili index objekta.
     if type(object_index) == int:

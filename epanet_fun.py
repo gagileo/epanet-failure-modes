@@ -318,10 +318,10 @@ def pipelength(object_index='', value=''):  # ! Sredjeno - TESTIRATI
         return enapi.setValue('link', enapi.epa.EN_LENGTH, object_index, value)
 
 
-def pipediameter(object_index='', value=''):  # ! Sredjeno - TESTIRATI
+def pipediameter(object_index='', new_value=''):  # ! Sredjeno - TESTIRATI
     """
     :param  object_index='' : int
-    :param  value=''        : number
+    :param  new_value=''        : number
     :return                 : pipediameter() -> vraca precnik svih cevi u mrezi.
                               pipediameter(index_cevi) -> vraca precnik-cevi zadatog object_index-a.
                               pipediameter(index_cevi, vrednost u milimetrima) -> zadaje novu vrednost precnika-cevi.
@@ -337,11 +337,11 @@ def pipediameter(object_index='', value=''):  # ! Sredjeno - TESTIRATI
 
         return map(lambda p: enapi.getValue('link', enapi.epa.EN_DIAMETER, p), pipe_pos)
 
-    elif object_index != '' and value == '':
+    elif object_index != '' and new_value == '':
         return enapi.getValue('link', enapi.epa.EN_DIAMETER, object_index)
 
-    elif object_index != '' and value != '':
-        return enapi.setValue('link', enapi.epa.EN_DIAMETER, object_index, value)
+    elif object_index != '' and new_value != '':
+        return enapi.setValue('link', enapi.epa.EN_DIAMETER, object_index, new_value)
 
 
 def piperoughness(object_index='', value=''):  # ! Sredjeno - TESTIRATI
