@@ -1,0 +1,21 @@
+// ----------------------------- //
+// pomocne_funkcije"".py //
+// ----------------------------- //
+
+coordFun -------------> Dodata nova fja i sredjen `code`, nije testirana!
+dodaj_coordFun
+duzineCevi
+epa_blok
+getBlokAtrib
+getBlokData
+getCoord
+new_pat
+newQH
+pomFun1
+pumpQH
+rastojanje
+sw_blocks
+swDict
+swmm_getCoord
+=====================================
+

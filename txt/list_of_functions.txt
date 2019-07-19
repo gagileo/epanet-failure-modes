@@ -1,0 +1,63 @@
+
+# ***********************************************************************************************************************
+#   PAKET:           epanet_fun
+#
+#   VERZIJA:         1.0         |  1.1
+#   DATUM(d/m/y):    2016/11/15  |  2019/07/10
+#   
+#   AUTOR:           Dragan Babic - Gagi
+#   INFO:            Deo master rada
+#
+#   Paket sadrzi sledece funkcije:
+#
+#   openepafile      - Otvaranje EPANET inp-fajla
+#   closefile        - Zatvaranje EPANET inp-fajla
+#   tableview        - Predstavljanje podataka u vidu tabele
+#
+#   CVOROVI:
+#   junctions        - Dictionary cvorova u mrezi
+#   junctelevation   - Nadmorska visina cvora(cvorova)
+#   junctbasedemand  - Inicijalna cvorna potrosnja
+#   junctdemand      - Cvorna potrosnja u vremenskom koraku
+#   junctpressure    - Pritisak u cvoru(cvorovima)
+#   juncthead        - Visina pritiska u cvoru(cvorovima)
+#
+#   CEVI:
+#   pipes            - Dictionary cevi u mrezi
+#   pipenodes        - Cvorovi na krajevima cevi
+#   pipestatus       - Status cevi (Otvorena ili Zatvorena)
+#   pipelength       - Duzina cevi(cevima)
+#   pipediameter     - Precnik cevi(cevima)
+#   piperoughness    - Rapavost cevi(cevima)
+#   pipeflow         - Protok u cevi(cevima)
+#   pipevelocity     - Brzina u cevi(cevima)
+#
+#   PUMPE:
+#   pumps            - Dictionary pumpi u mrezi
+#   pumpnodes        - Cvorovi za koje je vezana pumpa
+#   pumpstatus       - Status pumpe (Otvorena ili Zatvorena)
+#   pumpspeed        - Parametar koji smanjuje ili uvecava krivu pumpe...tako nesto
+#   pumpsflow        - Protok kroz pumpu
+#   getQH            - QH krive
+#
+#   REZERVOARI:
+#   tanks            - Dictionary tank-ova(rezervoara) u mrezi
+#   tankselevation   - Nadmorska visina rezervoara
+#   tankinitlevel    - Inicijalni nivo u rezervoaru
+#   tankminlevel     - Minimalni nivo u rezervoaru
+#   tankmaxlevel     - Maksimalni nivo u rezervoaru
+#   tankminvolume    - Minimalna zapremina rezervoara
+#   tankpressure     - Pritisak u rezervoaru
+#
+#   IZVORI:
+#   reservoirs       - Dictionary izvora u mrezi
+#
+#   OTKAZI:
+#   rescapacityfail  - Pad kapaciteta izvorista
+#   pipecapacityfail - Pad kapaciteta cevi
+#   pumpcapacityfail - Pad kapaciteta pumpe
+#   pipeleakfail     - Curenje cevi
+#   tankleakfail     - Curenje rezervoara
+#   reseconomfail    - Zamena rezervoara pumpom sa regulatorom pritiska
+#
+# ***********************************************************************************************************************
